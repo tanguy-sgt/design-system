@@ -4,6 +4,10 @@
 $active-sort-table-th: common.$color-table-sorting !default;
 
 @mixin hasIcon($direction) {
+  .glyphicon {
+    transform: translate(0%, -50%);
+  }
+
   @if $direction == "left" {
     padding-left: 3rem;
     @content;
